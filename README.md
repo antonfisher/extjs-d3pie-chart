@@ -20,29 +20,31 @@
 
 5. Update chart config:
 
-```javascript
-{
-  xtype: 'chart'
-  ...
-  cls: 'ux-d3-pie',                           // add css class for d3pie
-  series: [
-    {
-      type: 'd3pie',                          // change serie type
-      d3: d3,                                 // add link to d3 library
-      angleField: 'value',
-      radius: 90,
-      donut: 60,
-      label: {
-        field: 'name',
-        legendField: 'legend'
-      },
-      totalValueRenderer: function (value) {  // renderer for total value [optional]
-        return (value + "K");
+  ```javascript
+  {
+    xtype: 'chart'
+    ...
+    cls: 'ux-d3-pie',                           // add css class for d3pie
+    series: [
+      {
+        type: 'd3pie',                          // change serie type
+        d3: d3,                                 // add link to d3 library
+        angleField: 'value',
+        radius: 90,
+        donut: 60,
+        label: {
+          field: 'name',
+          legendField: 'legend'
+        },
+        totalValueRenderer: function (value) {  // renderer for total value [optional]
+          return (value + "K");
+        }
       }
-    }
-  ]
-}
-```
+    ]
+  }
+  ```
+
+6. Try to change some options.
 
 ## Options
 |Option|Description|
@@ -54,7 +56,7 @@
 | `centerY: undefined` | {_Number_} pie center _Y_ coordinate ('_undefined_' for auto) |
 | `labelTextOffset: 15` | {_Number_} labels offset |
 | `angleField: 'value'` | {_String_} store property name for pie value |
-| `label: {field: 'name'}` | {_Object_} label properties |
+| `label: {...}` | {_Object_} label properties `{field: 'name', legendField: 'legend'}`|
 | `showItemDescription: true` | {_Boolean_} show text description under value |
 | `totalTitle: 'TOTAL'` | {_String_} total title |
 | `noDataText: 'NO DATA'` | {_String_} no data text |
@@ -74,8 +76,13 @@ __Renderers:__
 * `itemDescriptionRenderer: function (dataItem, totalValue, store) {...}` {_Function_} renderer for pie item description
 
 ## Libraries:
-* [http://www.sencha.com/products/extjs/](http://www.sencha.com/products/extjs/)
-* [http://d3js.org](http://d3js.org/)
+* [ExtJs 4](http://www.sencha.com/products/extjs/)
+* [d3js](http://d3js.org/)
 
 ## Thanks:
-* [http://jsfiddle.net/stephenboak/hYuPb/](http://jsfiddle.net/stephenboak/hYuPb/)
+* [Stephen Boak (@sboak)](https://github.com/sboak) - [http://blog.stephenboak.com/2011/08/07/easy-as-a-pie.html](http://blog.stephenboak.com/2011/08/07/easy-as-a-pie.html)
+
+## License
+Copyright (c) 2014 Anton Fischer
+
+MIT License. Free use and change.
