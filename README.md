@@ -1,4 +1,4 @@
-# Pie chart d3js serie for ExtJs 4
+# D3js Pie chart for ExtJs 4
 
 ## Example:
 ![Example pic](https://github.com/antonfisher/extjs-d3pie-chart/raw/master/docs/d3pie-example-1.png)
