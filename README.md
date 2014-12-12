@@ -1,13 +1,15 @@
 # D3js Pie chart for ExtJs 4
 
-## Example:
 ![Example pic](https://github.com/antonfisher/extjs-d3pie-chart/raw/master/docs/d3pie-example-1.png)
 
 ## How to use
 
 1. Copy sass file (_/sass/src/ux/chart/series/D3Pie.scss_) to your project;
+
 2. Copy js file (_/app/ux/chart/series/D3Pie.js_) to your project;
-3. Change serie class name "_Sandbox.ux.chart.series.D3Pie_";
+
+3. Change class name "_Sandbox.ux.chart.series.D3Pie_";
+
 4. Add requires
   ```javascript
     requires: [
@@ -65,11 +67,11 @@
 * `backgroundColor: '#ffffff'` {String} pie background color
 * `emptyBackgroundColor: '#eeeeee'` {String} empty pie background color
 
-Renderers:
+__Renderers:__
 * `totalValueRenderer: function (totalValue, store) {...}` {Function} renderer for pie total value
 * `itemValueRenderer: function (dataItem, totalValue, store) {...}` {Function} renderer for item value
 * `itemDescriptionRenderer: function (dataItem, totalValue, store) {...}` {Function} renderer for pie item description
 
-## Thanks for:
+## Thanks:
 * [http://jsfiddle.net/stephenboak/hYuPb/](http://jsfiddle.net/stephenboak/hYuPb/)
 * [http://d3js.org](http://d3js.org/)
