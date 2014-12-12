@@ -1,4 +1,4 @@
-# D3js Pie chart for ExtJs 4
+# D3js Pie Chart for ExtJs 4
 
 ![Example pic](https://github.com/antonfisher/extjs-d3pie-chart/raw/master/docs/d3pie-example-1.png)
 
@@ -24,11 +24,11 @@
   {
     xtype: 'chart'
     ...
-    cls: 'ux-d3-pie',                           // add css class for d3pie
+    cls: 'ux-d3-pie',             // add css class for d3pie
     series: [
       {
-        type: 'd3pie',                          // change serie type
-        d3: d3,                                 // add link to d3 library
+        type: 'd3pie',            // change serie type
+        d3: d3,                   // add link to d3 library
         angleField: 'value',
         radius: 90,
         donut: 60,
