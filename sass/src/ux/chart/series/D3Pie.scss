@@ -1,1 +1,26 @@
-../../../../../../sandbox/sass/src/ux/chart/series/D3Pie.scss
+.ux-d3-pie {
+    .ux-d3-pie-center-texts {
+        fill: #444444;
+    }
+
+    .ux-d3-pie-top-title {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .ux-d3-pie-bottom-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .ux-d3-pie-value {
+        fill: #444444;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .ux-d3-pie-description {
+        fill: #999999;
+        font-size: 12px;
+    }
+}
