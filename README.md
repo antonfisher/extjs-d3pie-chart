@@ -4,13 +4,13 @@
 
 ## How to use
 
-1. Copy sass file (_/sass/src/ux/chart/series/D3Pie.scss_) to your project;
+1. Copy sass file `/sass/src/ux/chart/series/D3Pie.scss` to your project;
 
-2. Copy js file (_/app/ux/chart/series/D3Pie.js_) to your project;
+2. Copy js file `/app/ux/chart/series/D3Pie.js` to your project;
 
-3. Change class name "_Sandbox.ux.chart.series.D3Pie_";
+3. Change class name `"Sandbox.ux.chart.series.D3Pie"`;
 
-4. Add requires
+4. Add requires:
   ```javascript
     requires: [
       ...
@@ -45,27 +45,28 @@
 ```
 
 ## Options
-
-* `d3: undefined` {Object} link to D3 library object __[required]__
-* `radius: undefined` {Number} pie radius ('_undefined_' for auto)
-* `donut: undefined` {Number} donut radius ('_undefined_' for auto)
-* `centerX: undefined` {Number} pie center _X_ coordinate ('_undefined_' for auto)
-* `centerY: undefined` {Number} pie center _Y_ coordinate ('_undefined_' for auto)
-* `labelTextOffset: 15` {Number} labels offset
-* `angleField: 'value'` {String} store property name for pie value
-* `label: {field: 'name'}` {Object} label properties
-* `showItemDescription: true` {Boolean} show text description under value
-* `totalTitle: 'TOTAL'` {String} total title
-* `noDataText: 'NO DATA'` {String} no data text
-* `highlightStyle: 'opacity: 0.1'` {String} highlight style for pie item's path
-* `unHighlightStyle: 'opacity: 1'` {String} unhighlight style for pie item's path
-* `filterAngle: 0.25` {Number} hide label when angle is less than this value
-* `border: 0` {Number} pie border
-* `pathStrokeWidth: 1` {Number} pie paths stroke width
-* `pathStrokeColor: '#ffffff'` {String} pie paths stroke color
-* `borderColor: '#eeeeee'` {String} pie border color (if _border_ property > 0)
-* `backgroundColor: '#ffffff'` {String} pie background color
-* `emptyBackgroundColor: '#eeeeee'` {String} empty pie background color
+|Option|Type|Description|
+|---|---|---|
+| `d3: undefined` | {Object} | __[required]__ link to D3 library object |
+| `radius: undefined` | {Number} | pie radius ('_undefined_' for auto) |
+| `donut: undefined` | {Number} | donut radius ('_undefined_' for auto) |
+| `centerX: undefined` | {Number} | pie center _X_ coordinate ('_undefined_' for auto) |
+| `centerY: undefined` | {Number} | pie center _Y_ coordinate ('_undefined_' for auto) |
+| `labelTextOffset: 15` | {Number} | labels offset |
+| `angleField: 'value'` | {String} | store property name for pie value |
+| `label: {field: 'name'}` | {Object} | label properties |
+| `showItemDescription: true` | {Boolean} | show text description under value |
+| `totalTitle: 'TOTAL'` | {String} | total title |
+| `noDataText: 'NO DATA'` | {String} | no data text |
+| `highlightStyle: 'opacity: 0.1'` | {String} | highlight style for pie item's path |
+| `unHighlightStyle: 'opacity: 1'` | {String} | unhighlight style for pie item's path |
+| `filterAngle: 0.25` | {Number} | hide label when angle is less than this value |
+| `border: 0` | {Number} | pie border |
+| `pathStrokeWidth: 1` | {Number} | pie paths stroke width |
+| `pathStrokeColor: '#ffffff'` | {String} | pie paths stroke color |
+| `borderColor: '#eeeeee'` | {String} | pie border color (if _border_ property > 0) |
+| `backgroundColor: '#ffffff'` | {String} | pie background color |
+| `emptyBackgroundColor: '#eeeeee'` | {String} | empty pie background color |
 
 __Renderers:__
 * `totalValueRenderer: function (totalValue, store) {...}` {Function} renderer for pie total value
