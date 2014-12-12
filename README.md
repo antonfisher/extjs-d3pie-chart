@@ -35,9 +35,6 @@
         label: {
           field: 'name',
           legendField: 'legend'
-        },
-        totalValueRenderer: function (value) {  // renderer for total value [optional]
-          return (value + "K");
         }
       }
     ]
@@ -56,7 +53,7 @@
 | `centerY: undefined` | {_Number_} pie center _Y_ coordinate ('_undefined_' for auto) |
 | `labelTextOffset: 15` | {_Number_} labels offset |
 | `angleField: 'value'` | {_String_} store property name for pie value |
-| `label: {...}` | {_Object_} label properties `{field: 'name', legendField: 'legend'}`|
+| `label: {...}` | {_Object_} label properties |
 | `showItemDescription: true` | {_Boolean_} show text description under value |
 | `totalTitle: 'TOTAL'` | {_String_} total title |
 | `noDataText: 'NO DATA'` | {_String_} no data text |
@@ -69,6 +66,14 @@
 | `borderColor: '#eeeeee'` | {_String_} pie border color (if _border_ property > 0) |
 | `backgroundColor: '#ffffff'` | {_String_} pie background color |
 | `emptyBackgroundColor: '#eeeeee'` | {_String_} empty pie background color |
+
+__Note:__ Additionally `label` object may contain `legendField` field to show it in legend:
+```javascript
+label: {
+  field: 'name',
+  legendField: 'legend'
+}
+```
 
 __Renderers:__
 * `totalValueRenderer: function (totalValue, store) {...}` {_Function_} renderer for pie total value
