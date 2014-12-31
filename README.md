@@ -2,6 +2,8 @@
 
 ![Example pic](https://github.com/antonfisher/extjs-d3pie-chart/raw/master/docs/d3pie-example-1.png)
 
+Demo: [http://antonfisher.com/extjs4-sandbox/](http://antonfisher.com/extjs4-sandbox/)
+
 ## How to use
 
 1. Copy sass file `/sass/src/ux/chart/series/D3Pie.scss` to your project;
