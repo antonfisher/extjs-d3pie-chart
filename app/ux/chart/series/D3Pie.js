@@ -484,7 +484,7 @@ Ext.define('Sandbox.ux.chart.series.D3Pie', {
             .attr('fill', self.emptyBackgroundColor)
             .attr('r', self.radius);
 
-        self.d3Data.centerGroup.append('svg:circle')
+        self.d3Data.arcGroup.append('svg:circle')
             .attr('fill', self.backgroundColor)
             .attr('r', self.donut + 1);
 
